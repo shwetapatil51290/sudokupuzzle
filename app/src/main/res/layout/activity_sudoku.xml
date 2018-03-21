@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.application.shwetapa.sudokupuzzle.view.SudokuActivity">
+
+    <LinearLayout
+        android:id="@+id/sudokuLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_text"
+        android:layout_toStartOf="@+id/resetBtn"
+        android:layout_below="@+id/sudokuLL"
+        android:layout_margin="16dp"
+        android:onClick="onNew"/>
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sudokuLL"
+        android:layout_margin="16dp"
+        android:onClick="onReset"/>
+
+    <Button
+        android:id="@+id/solveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solve"
+        android:layout_toEndOf="@+id/resetBtn"
+        android:layout_below="@+id/sudokuLL"
+        android:layout_margin="16dp"
+        android:onClick="onSolve"/>
+
+    <TextView
+        android:id="@+id/checkSudokuTV"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newBtn"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:padding="16dp"/>
+
+</RelativeLayout>

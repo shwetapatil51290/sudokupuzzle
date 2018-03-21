@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/numberTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/oneTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/twoTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/two"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/threeTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/three"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberTop"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fourTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/four"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/fiveTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/five"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/sixTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/six"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberMid"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sevenTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/seven"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/eightTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/eight"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/nineTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:text="@string/nine"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberBot"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/selectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/select"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/done"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
